@@ -1,4 +1,7 @@
 {
   "name": "AwesomeProject",
-  "displayName": "AwesomeProject"
+  "displayName": "AwesomeProject",
+  "platforms":  ["ios","android","web"],
+  "orientation": "portrait",
+  "icon": "./app/assets/icon.png"
 }
