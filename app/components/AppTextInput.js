@@ -1,12 +1,13 @@
 import React from 'react';
 import {View, TextInput, StyleSheet, Image} from 'react-native';
-import {MaterialCommunityIcons} from '@expo/vector-icons';
+import {Platform} from 'react-native';
+import colors from '../config/colors';
 
 import defaultStyles from '../config/styles';
 
-function AppTextInput({icon, ...otherProps}) {
+function AppTextInput({icon, width = '100%', ...otherProps}) {
   return (
-    <View style={styles.container}>
+    <View style={[styles.container, {width}]}>
       {icon && (
         <Image
           resizeMode="contain"
@@ -14,13 +15,17 @@ function AppTextInput({icon, ...otherProps}) {
             width: 18,
             height: 18,
             alignSelf: 'center',
-            marginRight: 5,
+            marginRight: 8,
             marginLeft: 5,
           }}
           source={icon}
         />
       )}
-      <TextInput style={defaultStyles.text} {...otherProps} />
+      <TextInput
+        style={defaultStyles.text}
+        placeholderTextColor="#000"
+        {...otherProps}
+      />
     </View>
   );
 }

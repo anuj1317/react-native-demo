@@ -1,5 +1,6 @@
 import React from 'react';
 import {StyleSheet, SafeAreaView, View} from 'react-native';
+import colors from '../config/colors';
 
 function Screen({children, style}) {
   return (
@@ -13,6 +14,7 @@ const styles = StyleSheet.create({
   screen: {
     paddingTop: 25,
     flex: 1,
+    backgroundColor: colors.white,
   },
 });
 

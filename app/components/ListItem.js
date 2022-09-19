@@ -11,9 +11,24 @@ function ListItem({title, subTitle, image, IconComponent, onPress}) {
         {IconComponent}
         {image && <Image style={styles.image} source={image} />}
         <View style={styles.detailsContainer}>
-          <AppText style={styles.title}>{title}</AppText>
-          {subTitle && <AppText style={styles.subTitle}>{subTitle}</AppText>}
+          <AppText style={styles.title} numberOfLines={1}>
+            {title}
+          </AppText>
+          {subTitle && (
+            <AppText style={styles.subTitle} numberOfLines={2}>
+              {subTitle}
+            </AppText>
+          )}
         </View>
+        <Image
+          resizeMode="contain"
+          style={{
+            width: 18,
+            height: 18,
+            marginRight: 5,
+          }}
+          source={require('../assets/next.png')}
+        />
       </View>
     </TouchableHighlight>
   );
@@ -24,9 +39,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     padding: 15,
     backgroundColor: colors.white,
+    alignItems: 'center',
   },
   detailsContainer: {
     marginLeft: 10,
+    flex: 1,
     justifyContent: 'center',
   },
   image: {
