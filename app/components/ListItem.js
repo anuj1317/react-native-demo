@@ -42,7 +42,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
   },
   detailsContainer: {
-    marginLeft: 10,
+    marginLeft: 12,
     flex: 1,
     justifyContent: 'center',
   },
