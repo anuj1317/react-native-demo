@@ -9,10 +9,11 @@ function ListingDetailsScreen({route}) {
   const listing = route.params;
   return (
     <View style>
-      <Image style={styles.image} source={listing.image} />
+      <Image style={styles.image} source={{uri: listing.img}} />
       <View style={styles.detailsContainer}>
-        <AppText style={styles.title}>{listing.title}</AppText>
-        <AppText style={styles.price}>${listing.price}</AppText>
+        <AppText style={styles.title}>{listing.name}</AppText>
+        <AppText style={styles.price}>Nickname: {listing.nickname}</AppText>
+        <AppText style={styles.show}>Show: {listing.category}</AppText>
         <View style={styles.userContainer}>
           <ListItem
             image={require('../assets/prof.png')}
@@ -31,7 +32,7 @@ const styles = StyleSheet.create({
   },
   image: {
     width: '100%',
-    height: 300,
+    height: 500,
   },
   price: {
     color: colors.secondary,
@@ -39,8 +40,13 @@ const styles = StyleSheet.create({
     fontSize: 15,
     marginVertical: 10,
   },
+  show: {
+    color: colors.primary,
+    fontWeight: 'bold',
+    fontSize: 15,
+  },
   title: {
-    fontSize: 18,
+    fontSize: 25,
     fontWeight: '500',
     color: colors.black,
   },
