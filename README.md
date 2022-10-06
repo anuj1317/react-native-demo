@@ -12,3 +12,6 @@
 # Bottom Navigation With Home Page
 ![image](https://user-images.githubusercontent.com/42887995/194218930-35fc2bc8-6fcf-40ea-9173-5daa9e6fa773.png)    ![image](https://user-images.githubusercontent.com/42887995/194218974-816d98a2-9b8e-4821-880e-22be2918d388.png)
 
+# Detail Page
+![image](https://user-images.githubusercontent.com/42887995/194219108-3412b1f2-fe9b-4260-a6f6-74abf1d9af42.png)   ![image](https://user-images.githubusercontent.com/42887995/194219161-24c6baec-9d2f-4d7f-a22b-5c6a81081967.png)
+
