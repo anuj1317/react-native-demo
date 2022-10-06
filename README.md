@@ -8,3 +8,7 @@
 # Register Page
 
 ![image](https://user-images.githubusercontent.com/42887995/194218391-67e13577-d378-4d29-92d6-764738d5773f.png)   ![image](https://user-images.githubusercontent.com/42887995/194218354-0598bdd4-779e-4a5d-b457-4f8f7daede1a.png)
+
+# Bottom Navigation With Home Page
+![image](https://user-images.githubusercontent.com/42887995/194218930-35fc2bc8-6fcf-40ea-9173-5daa9e6fa773.png)    ![image](https://user-images.githubusercontent.com/42887995/194218974-816d98a2-9b8e-4821-880e-22be2918d388.png)
+
