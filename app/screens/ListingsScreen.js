@@ -19,6 +19,7 @@ function ListingsScreen({navigation}) {
   const loadListings = async () => {
     try {
       const response = await listingsApi.getListings();
+      console.log('status--------', response.status);
       setError(false);
       setListings(response.data);
     } catch (err) {
@@ -30,7 +31,9 @@ function ListingsScreen({navigation}) {
     <Screen style={styles.screen}>
       {error && (
         <>
-          <AppText>Couldn't retrieve the listings.</AppText>
+          <AppText style={{color: 'tomato', alignSelf: 'center'}}>
+            Couldn't retrieve the listings.
+          </AppText>
         </>
       )}
       <FlatList
